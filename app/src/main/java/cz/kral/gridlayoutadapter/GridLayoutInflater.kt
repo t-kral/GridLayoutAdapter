@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.GridLayout
 
-class MyInflater<ITEM_VIEW : ItemViewParent, ITEM : Any>(
+class MyInflater<ITEM_VIEW : GridLayoutItemView, ITEM : Any>(
     private val inflater: LayoutInflater,
     private val layoutId: Int
 ) {

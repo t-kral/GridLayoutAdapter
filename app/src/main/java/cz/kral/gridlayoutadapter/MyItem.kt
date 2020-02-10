@@ -10,7 +10,8 @@ data class MyItem(val text: String)
 
 class MyItemView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : LinearLayout(context, attrs, defStyleAttr), ItemViewParent {
+) : LinearLayout(context, attrs, defStyleAttr), GridLayoutItemView {
+
     override fun fillView(item: Any) {
         item as MyItem
         button.text = item.text
